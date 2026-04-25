@@ -31,54 +31,8 @@ Link for the APP: LINK [https://musicfrequencyanalysis.streamlit.app/]
 * Compute reconstruction error (MSE)
 * Play and download processed audio
 
----
 
-## Concepts Covered
 
-### Fourier Series
-
-Any periodic signal can be expressed as a sum of sinusoids:
-[
-x(t) = \sum_{n=-\infty}^{\infty} C_n e^{j n \omega t}
-]
-
-The coefficients ( C_n ) represent the amplitude and phase of individual frequency components.
-
----
-
-### Fourier Transform
-
-Transforms a signal from time domain to frequency domain:
-[
-X(f) = \int x(t)e^{-j2\pi ft} dt
-]
-
-This shows how much of each frequency is present in the signal.
-
----
-
-### Discrete Fourier Transform (DFT)
-
-Used for sampled signals:
-[
-X[k] = \sum_{n=0}^{N-1} x[n] e^{-j2\pi kn/N}
-]
-
-Efficiently implemented using the Fast Fourier Transform (FFT).
-
----
-
-### Relation: Fourier Series vs DFT
-
-| Fourier Series             | DFT                          |
-| -------------------------- | ---------------------------- |
-| Continuous periodic signal | Discrete sampled signal      |
-| Infinite harmonics         | Finite frequency bins        |
-| Analytical representation  | Computational implementation |
-
-DFT serves as a practical approximation of the Fourier Transform for real-world discrete signals.
-
----
 
 ## How It Works
 
