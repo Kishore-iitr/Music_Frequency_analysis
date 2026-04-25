@@ -6,7 +6,8 @@ An interactive Streamlit-based audio analysis application that demonstrates the 
 
 This project enables users to decompose audio into frequency components, manipulate them, and reconstruct the signal, providing both theoretical understanding and practical implementation of frequency-domain processing.
 
-Link for the APP: LINK[https://musicfrequencyanalysis.streamlit.app/]
+Link for the APP: LINK(https://musicfrequencyanalysis.streamlit.app/)
+
 
 <img width="1914" height="865" alt="image" src="https://github.com/user-attachments/assets/bb90a213-9aa8-4f32-8ef6-614b843587b1" />
 
