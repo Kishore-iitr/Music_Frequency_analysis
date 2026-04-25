@@ -288,9 +288,14 @@ def run_app():
             low_hz, high_hz = high_hz, low_hz
 
         st.info(f"Selected band: {low_hz} Hz to {high_hz} Hz")
+        process_clicked = st.button("Process", use_container_width=True)
 
     if uploaded is None:
         st.markdown('<div class="panel">Upload a file from the left panel to start analysis.</div>', unsafe_allow_html=True)
+        return
+
+    if not process_clicked:
+        st.markdown('<div class="panel">Audio loaded. Click <b>Process</b> in the sidebar to start analysis and filtering.</div>', unsafe_allow_html=True)
         return
 
     original = read_audio_from_upload(uploaded)
